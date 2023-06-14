@@ -12,7 +12,7 @@ const Subcatogary = () => {
     const [activeTab, setActiveTab] = useState("Imp");
 
     useEffect(() => {
-        fetch(`http://localhost:5000/subCatagory/${activeTab}`)
+        fetch(`https://assigment-11-server.vercel.app/subCatagory/${activeTab}`)
             .then(res => res.json())
             .then(data => {
                 setCategories(data);

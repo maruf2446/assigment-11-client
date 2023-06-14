@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/toy')
+        loader: () => fetch('https://assigment-11-server.vercel.app/toy')
       },
       {
         path:"/Blog",
@@ -29,12 +29,12 @@ const router = createBrowserRouter([
       {
         path: "/alltoy",
         element: <AllToys></AllToys>,
-        loader: () => fetch('http://localhost:5000/toy')
+        loader: () => fetch('https://assigment-11-server.vercel.app/toy')
       },
       {
         path:"/details/:id",
           element: <Details></Details>,
-          loader: ({params}) => fetch(`http://localhost:5000/details/${params.id}`)
+          loader: ({params}) => fetch(`https://assigment-11-server.vercel.app/details/${params.id}`)
       },
       {
         path:"/login",

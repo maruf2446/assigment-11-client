@@ -18,7 +18,7 @@ const AddToy = () => {
         console.log(newToy)
 
         // send data to the server
-        fetch('http://localhost:5000/toy', {
+        fetch('https://assigment-11-server.vercel.app/toy', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
